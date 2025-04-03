@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+    "build": "node ./node_modules/tailwindcss/lib/cli.js -i ./src/input.css -o ./dist/output.css --minify"
   },
   "keywords": [
     "travel",
@@ -15,7 +15,7 @@
   ],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "tailwindcss": "^3.4.1",
     "autoprefixer": "^10.4.17",
     "postcss": "^8.4.35"
