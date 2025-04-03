@@ -1,0 +1,23 @@
+{
+  "name": "avlwanderlust",
+  "version": "1.0.0",
+  "description": "A local travel group website for Asheville Wanderlust",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "keywords": [
+    "travel",
+    "asheville",
+    "events",
+    "local"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35"
+  }
+} 
